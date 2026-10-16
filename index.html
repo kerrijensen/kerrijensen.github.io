@@ -27,7 +27,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li> NEED TO FIX THIS
+                        <li class="nav__item"><a href="#school" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -48,9 +49,14 @@
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/kerri-jensen/" class="home__social-icon" aria-label="LinkedIn"> <i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/kerrijensen" class="home__social-icon" aria-label="GitHub"><i class='bx bxl-behance' ></i></a>
-                    <a href="mailto:kerrijensen13@gmail.com" class="home__social-icon" aria-label="Email"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/kerri-jensen/" class="home__social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"> 
+                        <i class="bx bxl-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/kerrijensen" class="home__social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="bx bxl-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="#contact" class="home__social-icon" aria-label="Contact me"><i class="bx bx-envelope" aria-hidden="true"></i>
+                    </a>
                 </div>
 
                 <div class="home__img">
@@ -166,6 +172,7 @@
                     <div>
                         <h3 class="skills__subtitle">Student Software Developer</h3>
                         <p>Southern Utah University</p>
+                        <p class="experience__dates">April 2026 - Present</p>
                         <ul>
                             <li>Develop and maintain backend features for university applications using Python, Django, PostgreSQL, and REST APIs within an existing team codebase.</li>
                             <li>Implement database migrations, role-based permissions, search and content-management features, and automated tests.</li>
@@ -176,6 +183,7 @@
                     <div>
                         <h3 class="skills__subtitle">IT Help Desk Technician</h3>
                         <p>Southern Utah University</p>
+                        <p class="experience__dates">August 2025 - August 2026</p>
                         <ul>
                             <li>Resolved 30+ weekly support requests from students and faculty involving hardware, software, account access, authentication, networking, and device issues.</li>
                             <li>Diagnosed unfamiliar technical problems and managed user accounts.</li>
@@ -186,6 +194,7 @@
                     <div>
                         <h3 class="skills__subtitle">AmeriCorps STEM Teaching Assistant</h3>
                         <p>SUU PREP</p>
+                        <p class="experience__dates">May 2025 - July 2025</p>
                         <ul>
                             <li>Co-developed hands-on STEM curriculum in logic, engineering, robotics, and problem solving.</li>
                             <li>Delivered STEM lessons to 20+ middle-school students.</li>
@@ -199,50 +208,165 @@
             <section class="work section" id="work">
                 <h2 class="section-title">Projects</h2>
 
-                <div class="work__container bd-grid">
-                    <div>
-                        <h3 class="skills_subtitle">Coffee Corner</h3>
-                        <p><strong>Python, Django, PostgreSQL, Google Maps APIs</strong></p>
-                        
-                        <u1>
-                            <li>Built and deployed a full-stack Django web application for discovering coffee shops
-                                and managing user accounts, reviews, favorites, and personal journal entries.</li>
-                            <li>Integrated Google Maps and Place APIs for location-based search and developed 
-                                database-backed workflows for persistent user data</li>
-                        </u1>
+                <div class="projects__list bd-grid">
 
-                        <a href="https://coffeecornerco.com"
+                    <article class="project-card project-card--with-image">
+                        <figure class="project__figure">
+                            <a href="https://coffeecornerco.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit Coffee Corner">
+                                <img
+                                    src="assets/img/coffee-corner-places.png"
+                                    alt="Coffee Corner showing a map and coffee shop results"
+                                    class="project__image"
+                                    loading="lazy">
+                            </a>
+
+                            <figcaption>
+                                Places page · Map for coffee shop search
+                            </figcaption>
+                        </figure>
+
+                        <div>
+                            <h3 class="skills__subtitle">Coffee Corner</h3>
+                            <p class="project__dates">Fall 2025–Present</p>
+                            <p class="project__tech">
+                                Python, Django, PostgreSQL, Google Maps APIs
+                            </p>
+
+                            <ul>
+                                <li>Built and deployed a full-stack Django web application
+                                    for discovering coffee shops and managing user accounts,
+                                    reviews, favorites, and personal journal entries.</li>
+                                <li>Integrated Google Maps and Places APIs for location-based
+                                    search and developed database-backed workflows for
+                                    persistent user data.</li>
+                            </ul>
+
+                            <a class="project__link"
+                            href="https://coffeecornerco.com"
                             target="_blank"
                             rel="noopener noreferrer">
-                            Visit Coffee Corner
+                                Visit Coffee Corner ↗
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card--with-image">
+                        <figure class="project__figure">
+                            <a href="assets/files/smartpark-poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View SmartPark research poster PDF in a new tab">
+                                <img
+                                    src="assets/img/smartpark-poster.jpg"
+                                    alt="SmartPark research poster showing methods,
+                                        parking detection images, and results"
+                                    class="project__image"
+                                    loading="lazy">
+                            </a>
+                            <figcaption>
+                                Research poster · Presented at UCUR 2026
+                            </figcaption>
+                        </figure>
+
+                        <div>
+                            <h3 class="skills__subtitle">
+                                Smart Parking Spot Detection
+                            </h3>
+                            <p class="project__dates">Fall 2025–Spring 2026</p>
+                            <p class="project__tech">Python, OpenCV, YOLO</p>
+
+                            <ul>
+                                <li>Developed a computer-vision pipeline using
+                                    OpenCV and YOLO to detect parking-space occupancy,
+                                    and explored Random Forest models for parking
+                                    usage analysis and forecasting.</li>
+                                <li>Presented the project at UCUR 2026.</li>
+                            </ul>
+
+                            <a class="project__link"
+                            href="assets/files/smartpark-poster.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                View full poster (PDF) ↗
+                            </a>
+                        </div>
+                    </article>
+
+            <article class="project-card project-card--with-image">
+                <div class="project__demos"
+                    style="display: grid;
+                            grid-template-columns: repeat(2, minmax(0, 1fr));
+                            gap: 12px;
+                            width: 380px;
+                            max-width: 100%;">
+                    <figure style="margin: 0; min-width: 0;"
+                        <figcaption>Consent Request</figcaption>
+                        <a href="assets/img/popup.gif"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/popup.gif"
+                                alt="Consent request appearing in VR"
+                                loading="lazy">
                         </a>
-                    </div>
+                    </figure>
 
-                    <div>
-                        <h3 class="skills_subtitle">Smart Parking Spot Detection</h3>
-                        <p><strong>Python, OpenCV, YOLO</strong></p>
-                        
-                        <u1>
-                            <li>Developed a computer-vision pipeline using OpenCV and YOLO to detect 
-                                parking-space occupancy, and explored Random Forest models for parking usage
-                                analysis and forecasting.</li>
-                            <li>Presented the project at UCUR 2026</li>
-                        </u1>
-                    </div>
+                    <figure style="margin: 0; min-width: 0;">
+                        <figcaption>Accept Flow</figcaption>
+                        <a href="assets/img/accept.gif"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/accept.gif"
+                                alt="Consent accepted with green visual feedback"
+                                loading="lazy">
+                        </a>
+                    </figure>
 
-                    <div>
-                        <h3 class="skills_subtitle">Consent-Driven Proximity Interaction Framework</h3>
-                        <p><strong>C#, Unity, VR/XR</strong></p>
-                        
-                        <u1>
-                            <li>Collaborated on a six-person Unity VR capstone, integrating and testing 
-                                a world-space consent interface.</li>
-                            <li>Configured UI interactions for XR controller input.</li>
-                        </u1>
-                    </div>
+                    <figure style="margin: 0; min-width: 0;">
+                        <figcaption>Reject Flow</figcaption>
+                        <a href="assets/img/reject.gif"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/reject.gif"
+                                alt="Consent rejected with red visual feedback"
+                                loading="lazy">
+                        </a>
+                    </figure>
+
+                    <figure style="margin: 0; min-width: 0;">
+                        <figcaption>Player B Idle</figcaption>
+                        <a href="assets/img/ring.gif"
+                        target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/ring.gif"
+                                alt="Idle avatar and its personal-space ring"
+                                loading="lazy">
+                        </a>
+                    </figure>
                 </div>
-            </div>
-        </section>
+
+                <div>
+                    <h3 class="skills__subtitle">
+                        Consent-Driven Proximity Interaction Framework
+                    </h3>
+                    <p class="project__dates">Spring 2026</p>
+                    <p class="project__tech">C#, Unity, VR/XR</p>
+
+                    <ul>
+                        <li>Collaborated on a six-person Unity VR capstone,
+                            integrating and testing a world-space consent interface.</li>
+                        <li>Configured UI interactions for XR controller input.</li>
+                    </ul>
+
+                    <a class="project__link"
+                    href="https://github.com/Jeshuah71/consent-proximity-vr#demo"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        View team project and demos ↗
+                    </a>
+                </div>
+            </article>
+
+                </div>
+            </section>
 
 
             <!--===== CONTACT =====-->
@@ -254,7 +378,7 @@
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
+                        <input type="button" value="Submit" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -263,14 +387,8 @@
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Kerri Jensen</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+            <p class="footer_copy">Thanks for visiting!</p>
         </footer>
-
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>

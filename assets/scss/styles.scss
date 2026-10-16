@@ -523,3 +523,79 @@ img{
         }
     }
 }
+
+/* Spacious project cards */
+.projects__list {
+  gap: 2rem;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #e7dce9;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(48, 36, 56, 0.05);
+}
+
+.project-card .skills__subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.project__dates {
+  color: #67576c;
+  margin-bottom: 0.5rem;
+}
+
+.project__tech {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project__figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.project__figure a {
+  display: block;
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project__figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #67576c;
+}
+
+.project__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #76537d;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-card--with-image {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .project-card {
+    padding: 2rem;
+  }
+
+  .project-card--with-image {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 2rem;
+  }
+}

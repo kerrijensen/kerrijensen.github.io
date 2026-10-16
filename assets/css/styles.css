@@ -549,3 +549,74 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
 }
+/* ===== PROJECT LAYOUT ===== */
+.projects__list {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.project-card .skills__subtitle {
+  margin: 0 0 0.5rem;
+}
+
+.project__dates {
+  margin-bottom: 0.5rem;
+  color: #67576c;
+}
+
+.project__tech {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.project-card--with-image {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.project__figure {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  justify-self: start;
+}
+
+.project__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.project__figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: #67576c;
+}
+
+.project__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #76537d;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media screen and (min-width: 900px) {
+  .project-card--with-image {
+    grid-template-columns: minmax(0, 400px) minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+}
