@@ -27,8 +27,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li> NEED TO FIX THIS
-                        <li class="nav__item"><a href="#school" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -45,7 +45,12 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Kerri Jensen</span><br> Software Developer</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="assets/files/Kerri-Jensen-Resume.pdf"
+                        class="button"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            View Résumé
+                        </a>
                 </div>
 
                 <div class="home__social">
@@ -73,7 +78,7 @@
                                 width="479"
                                 height="467"
                                 preserveAspectRatio="xMidYMin slice"
-                                href="assets/img/KerriSmallPFP.jpg"
+                                href="assets/img/Kerri.jpg"
                             />
                         </g>
                     </svg>
@@ -86,7 +91,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/KerriSmallPFP.jpg" alt="Kerri Jensen">
+                        <img src="assets/img/Kerri.jpg" alt="Kerri Jensen">
                     </div>
                     
                     <div>
@@ -101,7 +106,7 @@
                         <p class="about__text">
                             My leadership style is hands-on and collaborative; I listen, communicate clearly, and work to keep moving forward. 
                             I have experience being part of a university’s political center in planning events, researching topics, and presenting to the student body. 
-                            I have also led a classroom as a STEM teacher assistant, keeping myself open and adaptable to listen to others’ needs. I am adaptable, dependable, and will get the job done right, while supporting others.
+                            I have also led a classroom as a STEM teacher assistant, keeping myself receptive to listen to others’ needs. I am adaptable, dependable, and will get the job done right, while supporting others.
                         </p>
 
                         <h3 class="about__subtitle">Personal Values</h3>
@@ -119,88 +124,124 @@
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills &amp; Achievements</h2>
 
-                <div class="skills__container bd-grid">
+                <div class="skills-overview bd-grid">
                     <div>
                         <h3 class="skills__subtitle">Key Skills</h3>
 
-                        <div class="skills__data">
-                            <span class="skills__name">Software development</span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Technical troubleshooting</span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">User support</span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Collaboration</span>
-                        </div>
-
-                        <div class="skills__data">
-                            <span class="skills__name">Research and presenting</span>
-                        </div>
+                        <ul class="skills-overview__list">
+                            <li>Software development</li>
+                            <li>Technical troubleshooting</li>
+                            <li>User support</li>
+                            <li>Collaboration</li>
+                            <li>Research and presenting</li>
+                        </ul>
                     </div>
 
                     <div>
                         <h3 class="skills__subtitle">Achievements</h3>
 
-                        <div class="skills__data">
-                            <span>Launched Coffee Corner</span>
+                        <div class="achievement">
+                            <h4>
+                                <a href="#coffee-corner">Launched Coffee Corner ↓</a>
+                            </h4>
+                            <p>
+                                Built a web app for discovering coffee shops
+                                and keeping a personal coffee journal.
+                            </p>
                         </div>
 
-                        <div class="skills__data">
-                            <span>Completed a team VR capstone project</span>
+                        <div class="achievement">
+                            <h4>
+                                <a href="#vr-consent">Completed a team VR capstone ↓</a>
+                            </h4>
+                            <p>
+                                Integrated and tested the consent interface
+                                on a six-person Unity team.
+                            </p>
                         </div>
 
-                        <div class="skills__data">
-                            <span>Completed a semester abroad at Canterbury Christ Church University in England</span>
+                        <div class="achievement">
+                            <h4>Studied abroad in England</h4>
+                            <p class="achievement__date">Spring 2024</p>
+                            <p>
+                                During my semester at Canterbury Christ Church University in England, 
+                                I studied AI and web programming while learning to feel at home somewhere new. 
+                                Building friendships and adjusting to a different environment helped me 
+                                become more independent and confident navigating change.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-
           
 
-            <!--===== EXPERIENCE =====-->
+                    <!--===== EXPERIENCE =====-->
             <section class="experience section" id="experience">
+                <div class="experience__heading">
                 <h2 class="section-title">Professional Experience</h2>
 
-                <div class="bd-grid">
-                    <div>
-                        <h3 class="skills__subtitle">Student Software Developer</h3>
-                        <p>Southern Utah University</p>
-                        <p class="experience__dates">April 2026 - Present</p>
-                        <ul>
-                            <li>Develop and maintain backend features for university applications using Python, Django, PostgreSQL, and REST APIs within an existing team codebase.</li>
-                            <li>Implement database migrations, role-based permissions, search and content-management features, and automated tests.</li>
-                            <li>Collaborate through Git/GitHub pull requests and code review while working in Docker-based development environments and remote Linux systems via SSH.</li>
-                        </ul>
-                    </div>
+                <a href="assets/files/Kerri-Jensen-Resume.pdf"
+                class="experience__resume"
+                target="_blank"
+                rel="noopener noreferrer">
+                    View Résumé ↗
+                </a>
+            </div>
 
-                    <div>
-                        <h3 class="skills__subtitle">IT Help Desk Technician</h3>
-                        <p>Southern Utah University</p>
-                        <p class="experience__dates">August 2025 - August 2026</p>
-                        <ul>
+                <div class="experience__list bd-grid">
+
+                    <article class="experience__item">
+                        <div class="experience__header">
+                            <h3 class="skills__subtitle">Student Software Developer</h3>
+
+                            <div class="experience__meta">
+                                <p>Southern Utah University</p>
+                                <p>April 2026 – Present</p>
+                            </div>
+                        </div>
+
+                        <ul class="experience__bullets">
+                            <li>Collaborate with university developers on Talon, an in-house ticketing system designed to replace costly third-party software as part of the university’s new portal migration.</li>
+                            <li>Develop application features using Python, React, Django, PostgreSQL, and REST APIs, including database migrations and role-based permissions.</li>
+                            <li>Help transition existing university systems to the new portal, focusing on accessibility, efficiency, and ease of use.</li>
+                            <li>Participate in team testing and code reviews to improve application functionality and reliability.</li>
+                        </ul>
+                    </article>
+
+                    <article class="experience__item">
+                        <div class="experience__header">
+                            <h3 class="skills__subtitle">IT Help Desk Technician</h3>
+
+                            <div class="experience__meta">
+                                <p>Southern Utah University</p>
+                                <p>August 2025 – August 2026</p>
+                            </div>
+                        </div>
+
+                        <ul class="experience__bullets">
                             <li>Resolved 30+ weekly support requests from students and faculty involving hardware, software, account access, authentication, networking, and device issues.</li>
                             <li>Diagnosed unfamiliar technical problems and managed user accounts.</li>
                             <li>Explained solutions clearly to non-technical users.</li>
                         </ul>
-                    </div>
+                    </article>
 
-                    <div>
-                        <h3 class="skills__subtitle">AmeriCorps STEM Teaching Assistant</h3>
-                        <p>SUU PREP</p>
-                        <p class="experience__dates">May 2025 - July 2025</p>
-                        <ul>
+                    <article class="experience__item">
+                        <div class="experience__header">
+                            <h3 class="skills__subtitle">AmeriCorps STEM Teaching Assistant</h3>
+
+                            <div class="experience__meta">
+                                <p>SUU PREP</p>
+                                <p>May 2025 – July 2025</p>
+                            </div>
+                        </div>
+
+                        <ul class="experience__bullets">
                             <li>Co-developed hands-on STEM curriculum in logic, engineering, robotics, and problem solving.</li>
                             <li>Delivered STEM lessons to 20+ middle-school students.</li>
                             <li>Adapted classroom support by listening to students’ needs.</li>
                         </ul>
-                    </div>
+                    </article>
+
                 </div>
             </section>
 
@@ -210,7 +251,7 @@
 
                 <div class="projects__list bd-grid">
 
-                    <article class="project-card project-card--with-image">
+                    <article class="project-card project-card--with-image" id="coffee-corner">
                         <figure class="project__figure">
                             <a href="https://coffeecornerco.com"
                             target="_blank"
@@ -295,7 +336,7 @@
                         </div>
                     </article>
 
-            <article class="project-card project-card--with-image">
+            <article class="project-card project-card--with-image" id="vr-consent">
                 <div class="project__demos"
                     style="display: grid;
                             grid-template-columns: repeat(2, minmax(0, 1fr));
