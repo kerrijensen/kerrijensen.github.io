@@ -1,14 +1,31 @@
-# Portfolio Responsive Complete
-## [Watch it on youtube](https://youtu.be/AKNvTxWOdKw)
-### Portfolio Responsive Complete
+# Kerri Jensen — Portfolio
 
-- Responsive Personal Portfolio Website HTML CSS & JavaScript.
-- Contains animations when scrolling.
-- Smooth scrolling in each section.
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+My personal portfolio website, featuring my software development projects,
+professional experience, leadership, and personal values.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/@Bedimcode)
+**[View my portfolio](https://kerrijensen.github.io/)**
 
-![preview img](/preview.png)
+## Featured Projects
 
+- **Coffee Corner:** A full-stack Django application for discovering coffee
+  shops, writing reviews, saving favorites, and keeping a coffee journal.
+- **Smart Parking Spot Detection:** A computer-vision research project using
+  OpenCV and YOLO, presented at UCUR 2026.
+- **Consent-Driven Proximity Interaction Framework:** A six-person Unity VR
+  capstone featuring a consent interface and XR controller interactions.
+
+## Built With
+
+HTML, CSS, JavaScript, and Boxicons.
+
+## View Locally
+
+Download or clone this repository, then open `index.html` in a browser.
+
+## Credits
+
+Adapted from Bedimcode’s
+[Portfolio Responsive Complete](https://github.com/bedimcode/portfolio-responsive-complete)
+template and customized with my own content, styling, and project media.
+
+The template’s license is included in `LICENSE.md`.
