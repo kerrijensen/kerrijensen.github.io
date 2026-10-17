@@ -54,3 +54,46 @@ const sr = ScrollReveal({
 sr.reveal('.home__data', {});
 sr.reveal('.home__img', { delay: 400 });
 sr.reveal('.home__social-icon', { interval: 200 });
+
+/*===== CONTACT FORM =====*/
+const contactForm = document.querySelector('.contact__form');
+const contactStatus = document.getElementById('contact-status');
+
+if (contactForm && contactStatus) {
+    const submitButton = contactForm.querySelector('[type="submit"]');
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (submitButton.disabled) return;
+
+        submitButton.disabled = true;
+        submitButton.value = 'Sending…';
+        contactStatus.textContent = 'Sending your message…';
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    Accept: 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                contactStatus.textContent =
+                    'Thanks! Your message was sent.';
+                contactForm.reset();
+            } else {
+                contactStatus.textContent =
+                    'Your message could not be sent. Please try again.';
+            }
+        } catch (error) {
+            contactStatus.textContent =
+                'Could not confirm your submission. Please check your connection before trying again.';
+        } finally {
+            submitButton.disabled = false;
+            submitButton.value = 'Send Message';
+        }
+    });
+}
